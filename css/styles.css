@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lora', serif;
+    font-size: 1.00 em;
+    color: #666;
+    width: 100%;
+}
+
+header {
+    padding: 1.250em;
+    background: #333; 
+    color: #fff;
+    font-weight: bold;
+}
+
+main {
+    padding: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 30em 30em 30em;
+    grid-gap: 50px;
+
+}
+
+.gradient {
+    height: 30em;
+    width: 30em;
+    border-radius: 10px;
+}
+
+/* Gradient 1 */
+#gradient-1 {
+    background: repeating-linear-gradient(-45deg, #C1F0F4, #C1F0F4 5px, #6DDDF2 5px, #6DDDF2 10px);
+}
+
+#gradient-2 {
+    background: repeating-radial-gradient(#F17A97, #F17A97 5px, #F3BCC8 5px, #F3BCC8 10px);
+}
