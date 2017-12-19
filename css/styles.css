@@ -24,7 +24,7 @@ main {
 .container {
     display: grid;
     grid-template-columns: 30em 30em 30em;
-    grid-gap: 50px;
+    grid-gap: 30px;
 
 }
 
@@ -41,4 +41,31 @@ main {
 
 #gradient-2 {
     background: repeating-radial-gradient(#F17A97, #F17A97 5px, #F3BCC8 5px, #F3BCC8 10px);
+}
+
+#gradient-3 {
+    background: linear-gradient(#09798B, #00A69C)
+}
+
+#gradient-4 {
+    background: linear-gradient(to right, #7FBFFF, #CA7FFF);
+}
+
+#gradient-5 {
+    background: linear-gradient(#C1F0F4 0%, #6DDDF2 30%, #F2526E);
+    position: relative;
+}
+
+#gradient-5 #triangle {
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 300px solid #6DDDF2;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
