@@ -23,14 +23,13 @@ main {
 
 .container {
     display: grid;
-    grid-template-columns: 30em 30em 30em;
-    grid-gap: 30px;
-
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-row-gap: 20px;
 }
 
 .gradient {
-    height: 30em;
-    width: 30em;
+    height: 200px;
+    width: 200px;
     border-radius: 10px;
 }
 
@@ -59,13 +58,17 @@ main {
 #gradient-5 #triangle {
     width: 0;
     height: 0;
-    border-left: 150px solid transparent;
-    border-right: 150px solid transparent;
-    border-bottom: 300px solid #6DDDF2;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #6DDDF2;
     position: absolute;
     margin: auto;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+}
+
+#gradient-6 {
+    background: linear-gradient(#5CE886 40%, #A07BE8);
 }
