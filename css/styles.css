@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lora', serif;
+    font-size: 1.00 em;
+    color: #666;
+    width: 100%;
+}
+
+header {
+    padding: 1.250em;
+    background: #333; 
+    color: #fff;
+    font-weight: bold;
+}
+
+main {
+    padding: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-row-gap: 20px;
+}
+
+.gradient {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+/* Gradient 1 */
+#gradient-1 {
+    background: repeating-linear-gradient(-45deg, #C1F0F4, #C1F0F4 5px, #6DDDF2 5px, #6DDDF2 10px);
+}
+
+#gradient-2 {
+    background: repeating-radial-gradient(#F17A97, #F17A97 5px, #F3BCC8 5px, #F3BCC8 10px);
+}
+
+#gradient-3 {
+    background: linear-gradient(#09798B, #00A69C)
+}
+
+#gradient-4 {
+    background: linear-gradient(to right, #7FBFFF, #CA7FFF);
+}
+
+#gradient-5 {
+    background: linear-gradient(#C1F0F4 0%, #6DDDF2 30%, #F2526E);
+    position: relative;
+}
+
+#gradient-5 #triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #6DDDF2;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#gradient-6 {
+    background: linear-gradient(#5CE886 40%, #A07BE8);
+}
